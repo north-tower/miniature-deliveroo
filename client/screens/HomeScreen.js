@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, TextInput } from 'react-native'
-import React, { useLayoutEffect } from 'react'
+import React, { useLayoutEffect, useState, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import tw from "tailwind-react-native-classnames"
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -15,11 +15,30 @@ import  { MagnifyingGlassCircleIcon } from 'react-native-heroicons/outline';
 import {CameraIcon } from 'react-native-heroicons/solid';
 import { ScrollView } from 'react-native';
 import Categories from '../components/Categories';
+import client from '../sanity';
+
+
+
+
 
 
 const HomeScreen = () => {
 
     const navigation = useNavigation();
+    const [ featuredCategories, setFeaturedCategories ] = useState([]);
+
+    useEffect(() => {
+        client.fetch(
+            'https://mkgghndz.api.sanity.io/v2021-10-21/data/query/production?query=%20*%5B_type%20%3D%3D%20%22featured%22%5D%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20...%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20resturants%5B%5D-%3E%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20...%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dishes%5B%5D-%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D'
+        ).then((data) => {
+            setFeaturedCategories(data);
+    console.log( featuredCategories)
+
+        });
+    }, []);
+
+
+    
   return (
     <SafeAreaView style={tw`bg-white h-full pt-5`}>
      <View style={tw`flex-row pb-3 items-center mx-4  `}>
