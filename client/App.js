@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import HomeScreen from './screens/HomeScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import ResturantScreen from './screens/ResturantScreen';
 
 
 
@@ -16,6 +17,9 @@ export default function App() {
       <SafeAreaProvider>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={HomeScreen}  options={{
+                headerShown: false,
+              }}/>
+          <Stack.Screen name="Resturant" component={ResturantScreen}  options={{
                 headerShown: false,
               }}/>
         </Stack.Navigator>

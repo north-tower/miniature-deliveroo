@@ -18,17 +18,17 @@ const FeaturedRow = ({id, title, description }) => {
       <ScrollView horizontal contentContainerStyle={{
         paddingHorizontal: 15,
       }} showsHorizontalScrollIndicator={false} style={tw`pt-4`} >
-        <ResturantCard id={13} imgUrl="https://www.allrecipes.com/thmb/aefJMDXKqs42oAP71dQuYf_-Qdc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_4x3_1724-fd91f26e0bd6400a9e89c6866336532b.jpg"
+        <ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3VzaGl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
          title="Sushi" rating={4.5} genre="Japanese" address="Main Str" 
-         short_description="Description" dishes={[]} long={10} lat={0} />
-         <ResturantCard id={13} imgUrl="https://www.allrecipes.com/thmb/aefJMDXKqs42oAP71dQuYf_-Qdc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_4x3_1724-fd91f26e0bd6400a9e89c6866336532b.jpg"
-         title="Sushi" rating={4.5} genre="Japanese" address="Main Str" 
-         short_description="Description" dishes={[]} long={10} lat={0} />
-<ResturantCard id={13} imgUrl="https://www.allrecipes.com/thmb/aefJMDXKqs42oAP71dQuYf_-Qdc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_4x3_1724-fd91f26e0bd6400a9e89c6866336532b.jpg"
-         title="Sushi" rating={4.5} genre="Japanese" address="Main Str" 
-         short_description="Description" dishes={[]} long={10} lat={0} />
-<ResturantCard id={13} imgUrl="https://www.allrecipes.com/thmb/aefJMDXKqs42oAP71dQuYf_-Qdc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_4x3_1724-fd91f26e0bd6400a9e89c6866336532b.jpg"
-         title="Sushi" rating={4.5} genre="Japanese" address="Main Str" 
+         short_description="Best Delicacy" dishes={[]} long={10} lat={0} />
+         <ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1622192308862-8032a315dd16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsJTIwZGlzaGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+         title="Moom Mam" rating={2.5} genre="Thai" address="Main Str" 
+         short_description="Finger Licking" dishes={[]} long={10} lat={0} />
+<ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsJTIwZGlzaGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+         title="Pizzeria" rating={5.0} genre="Italian" address="Main Str" 
+         short_description="Bon Appite" dishes={[]} long={10} lat={0} />
+<ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1459789034005-ba29c5783491?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWwlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+         title="Chez" rating={1.5} genre="Labanese" address="Main Str" 
          short_description="Description" dishes={[]} long={10} lat={0} />
 
 
