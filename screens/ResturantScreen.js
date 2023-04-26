@@ -3,7 +3,8 @@ import React from 'react'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { ScrollView } from 'react-native-gesture-handler'
 import tw from "tailwind-react-native-classnames"
-import { ArrowLeftIcon, MapPinIcon, StarIcon } from 'react-native-heroicons/solid'
+import { ArrowLeftIcon, ChevronRightIcon, MapPinIcon, QuestionMarkCircleIcon, StarIcon } from 'react-native-heroicons/solid'
+import DishRow from '../components/DishRow'
 
 
 const ResturantScreen = () => {
@@ -31,8 +32,8 @@ const ResturantScreen = () => {
                     <View style={tw`flex-row items-center p-1`}>
                         <StarIcon color="green" opacity={0.5} size={22} />
                         <Text style={tw`text-xs text-gray-500`}>
-                            - {genre}
-                        </Text>
+                        <Text style={tw`text-xs text-green-500`}>{rating}
+                        </Text>-{genre}</Text>
                     </View>
                     <View style={tw`flex-row items-center p-1`}>
                         <MapPinIcon color="gray" opacity={0.4} size={22} />
@@ -46,7 +47,31 @@ const ResturantScreen = () => {
                 <Text style={tw`text-gray-500 mt-2 pb-4`}>{short_description}</Text>
 
             </View>
+            <TouchableOpacity style={tw`flex-row items-center p-4 
+            border-gray-300`}>
+                <QuestionMarkCircleIcon color="gray" opacity={0.3} size={20} />
+                <Text style={tw`pl-2 flex-1 text-xs font-bold`}>
+                    Have a food allergy?
+                </Text>
+                <ChevronRightIcon color="#00CCBB"/>
+            </TouchableOpacity>
+        </View>
 
+        <View>
+            <Text style={tw`px-4 pt-6 mb-3 font-bold text-xl`}>
+                Menu
+            </Text>
+
+            {dishes.map(dish=>
+            (
+                <DishRow 
+                key={dish._id}
+                id={dish._id}
+                name={dish}
+                description={short_description}
+                price={dish.price}
+                image={dish.image} />
+            ))}
         </View>
     </ScrollView>
   )

@@ -96,7 +96,7 @@ const HomeScreen = () => {
             id="2" />
             
             <FeaturedRow3 title="Offers near you"
-             description="Why not support loac resturants tonight!"
+             description="Why not support local resturants tonight!"
             id="3" />
 
         </ScrollView>
