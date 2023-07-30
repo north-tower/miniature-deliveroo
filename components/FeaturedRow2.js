@@ -18,18 +18,13 @@ const FeaturedRow2 = ({id, title, description }) => {
       <ScrollView horizontal contentContainerStyle={{
         paddingHorizontal: 15,
       }} showsHorizontalScrollIndicator={false} style={tw`pt-4`} >
-        <ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1601313054536-4ffa26587696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWwlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-         title="African" rating={4.5} genre="Africa" address="Main Str" 
-         short_description="Description" dishes={[]} long={10} lat={0} />
-         <ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-         title="Saidonnue" rating={3.0} genre="Lebanese" address="Main Str" 
-         short_description="Description" dishes={[]} long={10} lat={0} />
-<ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1531088009183-5ff5b7c95f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsJTIwZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-         title="Brunch Discounts" rating={5.0} genre="French" address="Main Str" 
-         short_description="Description" dishes={[]} long={10} lat={0} />
-<ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1523798724321-364e1951df59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2ZjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-         title="Kfc" rating={1.5} genre="American" address="Main Str" 
-         short_description="Description" dishes={[]} long={10} lat={0} />
+        <ResturantCard id={23} imgUrl="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
+         title="Modern" rating={9.5} genre="Material" 
+         short_description="Modern design features clean lines, simple forms, and a focus on function and practicality. It often incorporates materials like glass, metal, and concrete." dishes={[]} long={10} lat={0} />
+         <ResturantCard id={24} imgUrl="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluaW1hbGlzdCUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+         title="Minimalist" rating={9.0} genre="Simple"
+         short_description="Emphasizes simplicity, clean spaces, and a less is more approach, with a focus on essential elements and clutter-free interiors." dishes={[]} long={10} lat={0} />
+
 
 
       </ScrollView>

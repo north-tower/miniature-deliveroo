@@ -3,10 +3,21 @@ import React from 'react'
 import { TouchableOpacity } from 'react-native'
 import { Image } from 'react-native'
 import tw from "tailwind-react-native-classnames"
+import { useNavigation } from '@react-navigation/native'
 
-const CategoryCard = ({ imgUrl, title}) => {
+
+const CategoryCard = ({ 
+  id, imgUrl, title, rating, genre, address, short_description, dishes, long, lat,
+}) => {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity style={tw`relative mr-2`}>
+    <TouchableOpacity style={tw`relative mr-2`} 
+    onPress={() => {
+      navigation.navigate("Resturant", {id, imgUrl, title, rating, genre, address, short_description, dishes, long, lat,
+      });
+  }}
+    >
         <Image source={{
             uri: imgUrl,
         }}

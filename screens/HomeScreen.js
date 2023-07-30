@@ -72,7 +72,7 @@ const HomeScreen = () => {
         <View style={tw`flex-row items-center pb-2 mx-4`}>
             <View style={tw`flex-row flex-1 bg-gray-200 p-3 rounded-full `}>
                 <MagnifyingGlassCircleIcon color="gray"  />
-                <TextInput placeholder='Resturants and Cuisines' />
+                <TextInput placeholder='Interior Design' />
             </View>
 
             <AdjustmentsHorizontalIcon  color="#00CCBB" />
@@ -86,17 +86,16 @@ const HomeScreen = () => {
                 title={category.name} description={category.short_description}
                 />
             })} */}
-
-            <FeaturedRow title="Featured" description="Paid placements from our partners"
+  <FeaturedRow title="Traditional and Classic" description="Features timeless elegance, rich textures, and refined elements that evoke a sense of history and sophistication."
             id="1" />
 
             
-            <FeaturedRow2 title="Tasty Discounts" 
-            description="Everyone's been enjoying these juicy discounts"
+            <FeaturedRow2 title="Modern and Contemporary" 
+            description="Emphasizes clean lines, minimalism, and a blend of sleek aesthetics with functional and innovative elements."
             id="2" />
             
-            <FeaturedRow3 title="Offers near you"
-             description="Why not support local resturants tonight!"
+            <FeaturedRow3 title="Eclectic and Bohemian"
+             description="Features a harmonious blend of diverse styles, cultural influences, and artistic elements, creating a vibrant and free-spirited living space."
             id="3" />
 
         </ScrollView>

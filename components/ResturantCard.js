@@ -25,7 +25,7 @@ const ResturantCard = ({
      style={tw`bg-white mr-3 shadow`}>
            <Image source={{ uri: imgUrl, }} style={tw`h-36 w-64 rounded-sm`} />
             <View style={tw`px-3 pb-4`}>
-                 <Text style={tw`font-bold text-lg pt-2`}>
+                 <Text style={tw`font-bold text-black text-lg pt-2`}>
                      {title}
                  </Text>
                  <View style={tw`flex-row items-center p-1 `}>

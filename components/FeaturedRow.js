@@ -18,18 +18,28 @@ const FeaturedRow = ({id, title, description }) => {
       <ScrollView horizontal contentContainerStyle={{
         paddingHorizontal: 15,
       }} showsHorizontalScrollIndicator={false} style={tw`pt-4`} >
-        <ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3VzaGl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-         title="Sushi" rating={4.5} genre="Japanese" address="Main Str" 
-         short_description="Best Delicacy" dishes={["sushi","pizza"]} long={10} lat={0} />
-         <ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1622192308862-8032a315dd16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsJTIwZGlzaGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-         title="Moom Mam" rating={2.5} genre="Thai" address="Main Str" 
-         short_description="Finger Licking" dishes={["Thai Rice","Greens"]} long={10} lat={0} />
-<ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsJTIwZGlzaGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-         title="Pizzeria" rating={5.0} genre="Italian" address="Main Str" 
-         short_description="Bon Appite" dishes={["Pizza","Rice"]} long={10} lat={0} />
-<ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1459789034005-ba29c5783491?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWwlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-         title="Chez" rating={1.5} genre="Lebanese" address="Main Str" 
-         short_description="Description" dishes={["Pizza","Rice"]} long={10} lat={0} />
+        <ResturantCard id={13} imgUrl="https://images.unsplash.com/photo-1478606604719-cce9b0e91569?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRyYWRpdGlvbmFsJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+         title="Traditional" rating={4.5} genre="European"  
+         short_description="This style draws inspiration from classic European designs and is characterized by ornate details, rich colors, and formal furniture arrangements." 
+         dishes={[
+          {
+            name: "Modern Living Room",
+            price: 12.99,
+            id: "1",
+            image: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9kZXJuJTIwbGl2aW5nJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          },
+          {
+            name: "Elegant Bedroom",
+            price: 9.99,
+            id: "2",
+            image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          }
+        ]}
+          long={10} lat={0} />
+         <ResturantCard id={14} imgUrl="https://plus.unsplash.com/premium_photo-1686090449192-4ab1d00cb735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJ1c3RpYyUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+         title="Rustic" rating={7.5} genre="Earthy"
+         short_description=" Rustic design embraces a warm, earthy feel with natural materials, exposed wood, and a cozy, country-inspired atmosphere." 
+         dishes={["Thai Rice","Greens"]} long={10} lat={0} />
 
 
       </ScrollView>
