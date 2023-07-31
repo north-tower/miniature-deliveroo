@@ -22,13 +22,9 @@ const BasketIcon = () => {
     { backgroundColor: '#00CCBB' }
   ]}
 >
-            <Text 
-            style={[tw`text-white font-extrabold text-lg py-1 px-2`,{ backgroundColor: 
-            '#01A296' }] }>{items.length}</Text>
-            <Text style={tw`flex-1 text-white font-extrabold text-lg text-center`}>View Basket</Text>
-            <Text style={tw`text-lg text-white font-extrabold`}>
-                ${basketTotal}
-            </Text>
+         
+            <Text style={tw`flex-1 text-white font-extrabold text-lg text-center`}>View Design</Text>
+           
 
         </TouchableOpacity>
     </View>

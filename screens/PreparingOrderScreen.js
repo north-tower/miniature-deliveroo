@@ -19,19 +19,19 @@ const PreparingOrderScreen = () => {
 
   return (
     <SafeAreaView style={tw`flex-1 bg-green-400 justify-center items-center`}>
-      <Animatable.Image
+      {/* <Animatable.Image
         source={require('../assets/gif.gif')}
         animation="slideInUp"
         iterationCount={1}
         style={tw`h-96 w-96`}
-      />
+      /> */}
 
       <Animatable.Text
         animation="slideInUp"
         iterationCount={1}
         style={tw`text-lg my-10 text-white font-bold text-center`}
       >
-        Waiting for your order to be accepted
+        Processing..
       </Animatable.Text>
 
       <Progress.Circle size={60} indeterminate={true} color="white" unfilledColor='transparent' />

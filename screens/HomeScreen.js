@@ -52,7 +52,7 @@ const HomeScreen = () => {
     
   return (
     <SafeAreaView style={tw`bg-white h-full pt-5`}>
-     <View style={tw`flex-row pb-3 items-center mx-4  `}>
+     {/* <View style={tw`flex-row pb-3 items-center mx-4  `}>
         <Image 
         source={{
             uri: "https:links.papareact.com/wru/"
@@ -68,7 +68,7 @@ const HomeScreen = () => {
             </Text>
         </View>
         <UserIcon  color="#00CCBB" />
-     </View>
+     </View> */}
         <View style={tw`flex-row items-center pb-2 mx-4`}>
             <View style={tw`flex-row flex-1 bg-gray-200 p-3 rounded-full `}>
                 <MagnifyingGlassCircleIcon color="gray"  />

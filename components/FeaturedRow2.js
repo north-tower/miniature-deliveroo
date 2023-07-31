@@ -24,9 +24,6 @@ const FeaturedRow2 = ({id, title, description }) => {
          <ResturantCard id={24} imgUrl="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluaW1hbGlzdCUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
          title="Minimalist" rating={9.0} genre="Simple"
          short_description="Emphasizes simplicity, clean spaces, and a less is more approach, with a focus on essential elements and clutter-free interiors." dishes={[]} long={10} lat={0} />
-
-
-
       </ScrollView>
     </View>
   )

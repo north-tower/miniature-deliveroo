@@ -1,20 +1,24 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
 import tw from "tailwind-react-native-classnames"
-import { MinusCircleIcon, PlusCircleIcon, EllipsisHorizontalCircleIcon, ChatBubbleOvalLeftEllipsisIcon } from 'react-native-heroicons/solid';
-import { useNavigation } from '@react-navigation/native'
-
-
-
+import { MinusCircleIcon, PlusCircleIcon } from 'react-native-heroicons/solid';
+import { useDispatch, useSelector } from "react-redux"
+import {addToBasket, selectBasketItems, removeFromBasket, selectBasketItemsWithId } from '../features/basketSlice';
 
 const DishRow = ( {id, name, description, price, image }) => {
   const [isPressed, setIsPressed] = useState(false);
-  const navigation = useNavigation();
+  const dispatch = useDispatch();
+  const items = useSelector((state) => selectBasketItemsWithId(state,id));
 
-  
-  
+  const addItemToBasket = () => {
+    dispatch(addToBasket({ id, name, description, price, image}));
+  }
 
- 
+  const removeItemFromBasket = () => {
+    if (!items.length > 0) return;
+
+    dispatch(removeFromBasket({ id }));
+  };
 
   return (
     <>
@@ -30,7 +34,7 @@ const DishRow = ( {id, name, description, price, image }) => {
             <Text style={tw`text-gray-400`}>
                 {description}
             </Text>
-            <Text style={tw`text-gray-400 mt-2`}>{price}</Text>
+          
           </View>
         
         <View>
@@ -43,18 +47,10 @@ const DishRow = ( {id, name, description, price, image }) => {
       {isPressed &&(
         <View style={tw`bg-white px-4`}>
           <View style={tw`flex-row items-center pb-3`}>
-            <TouchableOpacity onPress={() => {
-      navigation.navigate("DeliveryScreen");
-  }}
-             >
-              <EllipsisHorizontalCircleIcon color= "gray"
-              size={40} />
-            </TouchableOpacity>
+            <Text style={tw`text-black`}></Text>
 
-           
-
-            <TouchableOpacity >
-              <ChatBubbleOvalLeftEllipsisIcon size={40} color={"#00ccbb"}/>
+            <TouchableOpacity onPress={addItemToBasket}>
+              <PlusCircleIcon size={40} color={"#00ccbb"}/>
             </TouchableOpacity>
           </View>
         </View>
