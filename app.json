@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "deliveroo",
-    "slug": "deliveroo",
+    "name": "Giana's",
+    "slug": "gianas",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/1024.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icon_adaptive_back.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,18 +19,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon_adaptive_fore.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.northtower.deliveroo"
+      "package": "com.northtower.giana"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "c14863b2-fb59-4791-bacf-fef677a0c5d2"
+        "projectId": "f807dc6b-63da-4fb7-ad64-06b384e1a6d7"
       }
-    }
+    },
+    "owner": "northtower"
   }
 }

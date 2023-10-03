@@ -51,7 +51,7 @@ const HomeScreen = () => {
 
     
   return (
-    <SafeAreaView style={tw`bg-white h-full pt-5`}>
+    <SafeAreaView style={tw`bg-white pt-5`}>
      {/* <View style={tw`flex-row pb-3 items-center mx-4  `}>
         <Image 
         source={{

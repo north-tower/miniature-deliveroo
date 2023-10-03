@@ -46,14 +46,14 @@ const FeaturedRow = ({id, title, description }) => {
     name: "Rustic Living Room",
     description: "Step into a cozy and inviting rustic living room with warm wooden accents and earthy tones.",
     id: "3",
-    image: "https://images.unsplash.com/photo-1519869326165-9d7e8f16807c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJ1c3RpYyUyMGxpdmVkJTIwcm9vbXxlbnwwfHwwfHx8fDE2MzE1MjIzNTY&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "https://images.unsplash.com/photo-1484301548518-d0e0a5db0fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJ1c3RpYyUyMGludGVyaW9yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
   },
   {
     name: "Rustic Kitchen",
     description: "Experience the charm of a rustic kitchen with vintage elements and natural textures. ",
     price: 10.99,
     id: "4",
-    image: "https://images.unsplash.com/photo-1566938852227-66747156f3e9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHJ1c3RpYyUyMGtpdGNoZW4lMjByb29tfGVufDB8fDB8fHwxNjMxNTIyODAz&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "https://images.unsplash.com/photo-1540809799-5da9372c3f64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJ1c3RpYyUyMGludGVyaW9yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
   },
 ]}
 long={10} lat={0} />
